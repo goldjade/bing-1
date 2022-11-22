@@ -68,6 +68,28 @@ body {
   margin: 0 auto;
 }
 
+.prev-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../images/prev_arrow.png") no-repeat;
+  width: 7px;
+  height: 15px;
+  border: none;
+}
+
+.next-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../images/next_arrow.png") no-repeat;
+  width: 8px;
+  height: 15px;
+  border: none;
+}
+
 /* 레이아웃 */
 .wrap {
   position: relative;
@@ -99,26 +121,6 @@ body {
   margin: 0 auto;
   padding-left: 45px;
 }
-.goods-box .prev-btn {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url("../images/prev_arrow.png") no-repeat;
-  width: 7px;
-  height: 15px;
-  border: none;
-}
-.goods-box .next-btn {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url("../images/next_arrow.png") no-repeat;
-  width: 8px;
-  height: 15px;
-  border: none;
-}
 .goods {
   display: inline-block;
   width: 242px;
@@ -143,6 +145,29 @@ body {
 }
 
 /* 브랜드샵 */
+.brand .brand-inner .section-title {
+  margin-bottom: 40px;
+}
+.brand .brand-inner .brand-box {
+  position: relative;
+  padding-left: 45px;
+}
+.brand .brand-inner .brand-box .brand {
+  position: relative;
+  display: inline-block;
+  width: 242px;
+  height: 250px;
+  border: 1px solid #edecef;
+  border-radius: 30px;
+  margin-right: 16px;
+}
+.brand .brand-inner .brand-box .brand .brand-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* 고객문의 및 불편사항 */
 /* 온라인제보 */
 /* 하단 *//*# sourceMappingURL=main.css.map */

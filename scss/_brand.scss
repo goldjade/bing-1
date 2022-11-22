@@ -1,0 +1,26 @@
+.brand {
+  .brand-inner {
+    .section-title {
+      margin-bottom: 40px;
+    }
+    .brand-box {
+      position: relative;
+      padding-left: 45px;
+      .brand {
+        position: relative;
+        display: inline-block;
+        width: 242px;
+        height: 250px;
+        border: 1px solid #edecef;
+        border-radius: 30px;
+        margin-right: 16px;
+        .brand-logo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

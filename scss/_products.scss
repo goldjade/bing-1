@@ -10,27 +10,7 @@
       margin: 0 auto;
       padding-left: 45px;
 
-      .prev-btn {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background: url("../images/prev_arrow.png") no-repeat;
-        width: 7px;
-        height: 15px;
-        border: none;
-      }
 
-      .next-btn {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background: url("../images/next_arrow.png") no-repeat;
-        width: 8px;
-        height: 15px;
-        border: none;
-      }
 
       @at-root .goods {
         display: inline-block;
