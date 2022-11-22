@@ -1,0 +1,49 @@
+.cs {
+  position: relative;
+  display: block;
+}
+
+.sec-title {
+  font-family: "Binggrae-bold";
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.qna-box-wrap {
+  .qna-box {
+    width: 1220px;
+    height: 100%;
+    padding: 65px 45px;
+    border-radius: 30px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+    .emali {
+      width: calc(50% - 16px);
+      height: 325px;
+      background: green;
+      padding: 55px 45px;
+      margin-top: 30px;
+      float: left;
+      background: url(../images/sec04_backimg01.png) center ;
+      > h4 {
+        font-size: 32px;
+        padding-bottom: 32px;
+      }
+      >a{
+        width: 160px;
+        height: 43px;
+        color: #fff;
+        background: #ed1c24;
+      }
+    }
+    .phon {
+      font-family: "Binggrae-bold";
+      width: calc(50% - 16px);
+      height: 325px;
+      background-color: red;
+      padding: 55px 45px;
+      margin-top: 30px;
+      float: right;
+    }
+  }
+}
