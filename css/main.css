@@ -127,9 +127,16 @@ body {
   height: 298px;
   margin-right: 16px;
 }
+.goods:hover > .goods-type-hover {
+  display: block;
+}
+.goods:hover > .goods-type {
+  display: none;
+}
 .goods-img {
   width: 100%;
   padding-bottom: 13px;
+  cursor: auto;
 }
 
 .goods-type {
@@ -144,7 +151,24 @@ body {
   border-radius: 21px;
 }
 
+.goods-type-hover {
+  display: none;
+  width: 100%;
+  height: 43px;
+  font-size: 16px;
+  letter-spacing: -0.09em;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 21px;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
+  color: #fff;
+}
+
 /* 브랜드샵 */
+.brand .brand-inner {
+  margin-bottom: 170px;
+}
 .brand .brand-inner .section-title {
   margin-bottom: 40px;
 }
