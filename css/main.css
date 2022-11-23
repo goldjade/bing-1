@@ -549,15 +549,17 @@ body {
 }
 
 /* 온라인제보 */
-
 h3 {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .report-wrap {
+  display: flex;
+  justify-content: space-between;
   max-width: 1310px;
   margin: 0 auto;
+  padding-bottom: 140px;
 }
 .report-wrap .cyber {
   position: relative;
@@ -572,7 +574,39 @@ h3 {
   font-size: 20px;
   text-align: center;
 }
-.report-wrap .cyber > cyber-bt {
+.report-wrap .cyber > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
+.report-wrap .safe {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .safe > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .safe > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
   display: block;
   width: 160px;
   height: 43px;
