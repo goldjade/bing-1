@@ -77,6 +77,7 @@ body {
   width: 7px;
   height: 15px;
   border: none;
+  opacity: 0.1;
 }
 
 .next-btn {
@@ -88,6 +89,8 @@ body {
   width: 8px;
   height: 15px;
   border: none;
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* 레이아웃 */
@@ -339,31 +342,35 @@ body {
   margin-bottom: 40px;
 }
 
-.goods-box {
+.goods-wrap {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  margin: 0 auto;
-  padding-left: 45px;
+  padding: 0 40px;
 }
-.goods {
-  display: inline-block;
-  width: 242px;
-  height: 298px;
-  margin-right: 16px;
+.goods-box {
+  display: block;
+  width: 260px;
+  padding: 0 9px;
+  transition: all 1s ease;
 }
-.goods:hover > .goods-type-hover {
+.goods-box:hover {
+  transform: translateY(-10px);
+}
+.goods-box:hover > .goods-type-hover {
   display: block;
 }
-.goods:hover > .goods-type {
+.goods-box:hover > .goods-type {
   display: none;
 }
 .goods-img {
   width: 100%;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   cursor: auto;
 }
 
 .goods-type {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 43px;
   font-size: 16px;
@@ -395,20 +402,23 @@ body {
 .brand .brand-inner .section-title {
   margin-bottom: 40px;
 }
-.brand .brand-inner .brand-box {
+.brand .brand-inner .brand-wrap {
   position: relative;
-  padding-left: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
 }
-.brand .brand-inner .brand-box .brand {
+.brand .brand-inner .brand-wrap .brand-box {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 242px;
   height: 250px;
   border: 1px solid #edecef;
   border-radius: 30px;
-  margin-right: 16px;
+  margin: 0 8px;
+  cursor: auto;
 }
-.brand .brand-inner .brand-box .brand .brand-logo {
+.brand-logo {
   position: absolute;
   left: 50%;
   top: 50%;
