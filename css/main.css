@@ -414,47 +414,174 @@ body {
   display: block;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .qna-box-wrap .qna-box {
-  width: 1220px;
+  max-width: 1310px;
   height: 100%;
   padding: 65px 45px;
   border-radius: 30px;
   margin: 0 auto;
+  margin-bottom: 135px;
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
 }
-.qna-box-wrap .qna-box .emali {
-  width: calc(50% - 16px);
+.qna-box-wrap .qna-box .qna-top .emali {
+  position: relative;
+  display: block;
+  width: 48.5%;
   height: 325px;
-  background: green;
   padding: 55px 45px;
   margin-top: 30px;
   float: left;
-  background: url("../images/sec04_backimg01.png") center;
+  background: #eef8fa url("../images/sec04_backimg01.png") center no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.qna-box-wrap .qna-box .emali > h4 {
+.qna-box-wrap .qna-box .qna-top .emali > h4 {
+  font-family: "Binggrae-Bold", sans-serif;
   font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
   padding-bottom: 32px;
 }
-.qna-box-wrap .qna-box .emali > a {
+.qna-box-wrap .qna-box .qna-top .emali > p {
+  font-size: 16px;
+  line-height: 1.63;
+}
+.qna-box-wrap .qna-box .qna-top .emali > a {
+  display: block;
   width: 160px;
   height: 43px;
   color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+  position: absolute;
+  bottom: 55px;
   background: #ed1c24;
 }
-.qna-box-wrap .qna-box .phon {
+.qna-box-wrap .qna-box .qna-top .phon {
   font-family: "Binggrae-bold";
-  width: calc(50% - 16px);
+  width: 48.5%;
   height: 325px;
   background-color: red;
   padding: 55px 45px;
   margin-top: 30px;
+  background: #fdf3f2 url("../images/sec04_backimg02.png") center no-repeat;
+  background-size: contain;
   float: right;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.qna-box-wrap .qna-box .qna-top .phon > h4 {
+  font-family: "Binggrae-Bold", sans-serif;
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+.qna-box-wrap .qna-box .qna-top .phon .p-n {
+  display: block;
+  font-family: "Binggrae-Bold", sans-serif;
+  font-size: 46.5px;
+  padding-bottom: 30px;
+}
+.qna-box-wrap .qna-box .qna-top .phon .month {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.qna-box-wrap .qna-box .qna-top .phon .time {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-left: 15px;
+  padding-top: 25px;
+  color: #e0462e;
+}
+.qna-box-wrap .qna-box .qna-bottom .flex-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 47px 0 27px 0;
+}
+.qna-box-wrap .qna-box .qna-bottom .flex-box > span {
+  font-family: "Binggrae-Bold", sans-serif;
+  font-size: 23px;
+  line-height: 43px;
+}
+.qna-box-wrap .qna-box .qna-bottom .flex-box .qna-more-bt {
+  width: 160px;
+  height: 43px;
+  background: #fff;
+  border: 1px solid #edecef;
+  border-radius: 20px;
+}
+.qna-box-wrap .qna-box .qna-bottom .flex-box .qna-more-bt:hover {
+  background: #ed1c24;
+  color: #fff;
+  cursor: pointer;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list {
+  position: relative;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li {
+  width: 48%;
+  height: 80px;
+  background: yellow;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li:nth-child(2n-1) {
+  float: left;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li:nth-child(2n) {
+  float: right;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li:nth-child(5) {
+  margin: 0;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li:nth-child(6) {
+  margin: 0;
+}
+.qna-box-wrap .qna-box .qna-bottom .qna-list > li > a {
+  line-height: 80px;
 }
 
 /* 온라인제보 */
+
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.report-wrap {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+.report-wrap .cyber {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .cyber > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .cyber > cyber-bt {
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
+
 /* 하단 */
