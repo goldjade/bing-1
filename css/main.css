@@ -3,20 +3,14 @@
 @font-face {
   font-family: "Binggrae";
   src: url("font/Binggrae.eot");
-  src: url("font/Binggrae.eot?#iefix") format("embedded-opentype"),
-    url("font/Binggrae.woff2") format("woff2"),
-    url("font/Binggrae.woff") format("woff"),
-    url("font/Binggrae.ttf") format("truetype");
+  src: url("font/Binggrae.eot?#iefix") format("embedded-opentype"), url("font/Binggrae.woff2") format("woff2"), url("font/Binggrae.woff") format("woff"), url("font/Binggrae.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Binggrae-bold";
   src: url("font/Binggrae-Bold.eot");
-  src: url("font/Binggrae-Bold.eot?#iefix") format("embedded-opentype"),
-    url("font/Binggrae-Bold.woff2") format("woff2"),
-    url("font/Binggrae-Bold.woff") format("woff"),
-    url("font/Binggrae-Bold.ttf") format("truetype");
+  src: url("font/Binggrae-Bold.eot?#iefix") format("embedded-opentype"), url("font/Binggrae-Bold.woff2") format("woff2"), url("font/Binggrae-Bold.woff") format("woff"), url("font/Binggrae-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -205,8 +199,6 @@ body {
 }
 
 .section-title {
-  font-family: "Binggrae-bold";
-  font-size: 38px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -249,4 +241,4 @@ body {
 }
 
 /* 온라인제보 */
-/* 하단 */ /*# sourceMappingURL=main.css.map */
+/* 하단 *//*# sourceMappingURL=main.css.map */
