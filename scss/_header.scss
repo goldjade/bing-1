@@ -1,8 +1,16 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  z-index: 9999;
+}
+
 .header-wrap {
   position: relative;
   display: block;
   width: 100%;
-  z-index: 9999;
 
   .header-top {
     position: relative;
@@ -79,8 +87,8 @@
               content: "";
               position: absolute;
               right: -6px;
-              top: 50%; transform: 
-              translateY(calc(-50% - 7px));
+              top: 50%;
+              transform: translateY(calc(-50% - 7px));
               background: #e0462e;
               width: 5px;
               height: 5px;
@@ -142,7 +150,7 @@
       .hamberger {
         font-size: 14px;
         border: none;
-        background: #fff;
+        background: transparent;
         cursor: pointer;
       }
     }
