@@ -4,18 +4,21 @@
     .section-title {
       margin-bottom: 40px;
     }
-    .brand-box {
+    .brand-wrap {
       position: relative;
-      padding-left: 45px;
-      .brand {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      .brand-box {
         position: relative;
-        display: inline-block;
+        display: block;
         width: 242px;
         height: 250px;
         border: 1px solid #edecef;
         border-radius: 30px;
-        margin-right: 16px;
-        .brand-logo {
+        margin: 0 8px;
+        cursor: auto;
+        @at-root .brand-logo {
           position: absolute;
           left: 50%;
           top: 50%;
@@ -25,3 +28,5 @@
     }
   }
 }
+
+// 170 150
