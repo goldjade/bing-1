@@ -417,6 +417,8 @@ body {
 
 .goods-wrap {
   position: relative;
+  width: 100%;
+  max-width: 1650px;
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
@@ -424,27 +426,29 @@ body {
 .goods-box {
   display: block;
   width: 260px;
-  padding: 0 9px;
+  text-align: center;
   transition: all 1s;
 }
 .goods-box:hover {
   transform: translateY(-10px);
 }
 .goods-box:hover > .goods-type-hover {
-  display: block;
+  display: inline-block;
 }
 .goods-box:hover > .goods-type {
   display: none;
 }
 .goods-img {
   width: 100%;
-  padding-bottom: 12px;
+  max-width: 242px;
+  margin-bottom: 12px;
   cursor: auto;
 }
 
 .goods-type {
-  display: block;
+  display: inline-block;
   width: 100%;
+  max-width: 242px;
   height: 43px;
   font-size: 16px;
   letter-spacing: -0.09em;
@@ -457,6 +461,7 @@ body {
 .goods-type-hover {
   display: none;
   width: 100%;
+  max-width: 242px;
   height: 43px;
   font-size: 16px;
   letter-spacing: -0.09em;
@@ -468,6 +473,11 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1700px) {
+  .goods-wrap {
+    width: 95%;
+  }
+}
 /* 브랜드샵 */
 .brand-inner {
   margin-bottom: 170px;
@@ -906,6 +916,74 @@ body {
   }
 }
 /* 온라인제보 */
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.report-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+.report-wrap .cyber {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .cyber > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .cyber > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
+.report-wrap .safe {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .safe > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .safe > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
 
 /* 하단 */
 .footer {
@@ -1066,6 +1144,4 @@ body {
   margin-right: 30px;
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
-}
-
-
+}/*# sourceMappingURL=main.css.map */
