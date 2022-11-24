@@ -56,6 +56,30 @@ body {
   width: 1310px;
   margin: 0 auto;
 }
+.prev-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../images/prev_arrow.png") no-repeat;
+  width: 7px;
+  height: 15px;
+  border: none;
+  opacity: 0.1;
+}
+
+.next-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../images/next_arrow.png") no-repeat;
+  width: 8px;
+  height: 15px;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+}
 /* 레이아웃 */
 .wrap {
   position: relative;
@@ -70,7 +94,6 @@ body {
   line-height: 1.45;
   letter-spacing: -1.9px;
 }
-
 /* 상단 */
 @import "header";
 /* 비주얼 */

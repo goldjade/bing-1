@@ -1,0 +1,32 @@
+.brand {
+  @at-root .brand-inner {
+    margin-bottom: 170px;
+    .section-title {
+      margin-bottom: 40px;
+    }
+    @at-root .brand-wrap {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      @at-root .brand-box {
+        position: relative;
+        display: block;
+        width: 242px;
+        height: 250px;
+        border: 1px solid #edecef;
+        border-radius: 30px;
+        margin: 0 8px;
+        cursor: auto;
+        @at-root .brand-logo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+// 170 150
