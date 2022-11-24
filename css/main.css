@@ -906,7 +906,106 @@ body {
   }
 }
 /* 온라인제보 */
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.report-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+.report-wrap .cyber {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .cyber > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .cyber > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
+.report-wrap .safe {
+  position: relative;
+  width: 48%;
+  height: 230px;
+  background: #f9f9f9;
+  padding: 78px 25px 58px 25px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+}
+.report-wrap .safe > p {
+  font-size: 20px;
+  text-align: center;
+}
+.report-wrap .safe > a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
+
+@media screen and (max-width: 1400px) {
+  .report-wrap {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .cyber > p {
+    font-size: 16px !important;
+  }
+  .safe > p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 1020px) {
+  a {
+    bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .report-wrap {
+    flex-wrap: wrap !important;
+    padding-bottom: 80px !important;
+  }
+  .report-wrap .cyber {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .report-wrap .safe {
+    width: 100% !important;
+  }
+}
 /* 하단 */
 .footer {
   position: relative;
@@ -1067,5 +1166,3 @@ body {
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
 }
-
-
