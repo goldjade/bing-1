@@ -1,0 +1,169 @@
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 387px;
+  background: rgba(0, 0, 0, 0.99);
+  margin: 0 auto;
+  padding: 40px 50px 30px;
+
+  .footer-1 {
+    position: relative;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    .f-logo {
+      width: 113px;
+      height: 30px;
+      background: url("../images/f_logo.png") no-repeat;
+    }
+    .f-right {
+      position: relative;
+      display: flex;
+      gap: 0 10px;
+      li {
+        height: 30px;
+        a {
+          line-height: 30px;
+          font-family: "Poppins", "Noto Sans KR", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #5a5958;
+          font-style: normal;
+        }
+      }
+    }
+  }
+  .footer-2 {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 217px;
+    padding: 30px 0 115px;
+    ul {
+      li {
+        font-family: "Poppins", "Noto Sans KR", sans-serif;
+        width: 600px;
+        height: 48px;
+        line-height: 24px;
+        box-sizing: border-box;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.7);
+        .subject {
+          position: relative;
+          width: 50.2px;
+          height: 31px;
+        }
+        .con {
+          box-sizing: border-box;
+          font-style: normal;
+          position: relative;
+          width: 42.34px;
+          height: 41px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .footer-3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    .copyright {
+      font-size: 14px;
+      line-height: 70px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .f-3-right {
+      position: relative;
+      display: flex;
+      .fo-3-box1 {
+        position: relative;
+        display: flex;
+
+        ul {
+          position: relative;
+          display: flex;
+          width: 240px;
+          height: 70px;
+          gap: 0 15px;
+          li {
+            width: 70px;
+            height: 70px;
+            box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%),
+              inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
+            background-color: #1b1b1b;
+            border-radius: 50%;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+
+            .insta {
+              background: url("../images/footer_sns01.png") no-repeat center;
+            }
+            .youtube {
+              background: url("../images/footer_sns02.png") no-repeat center;
+            }
+            .tft {
+              background: url("../images/footer_sns03.png") no-repeat center;
+            }
+          }
+        }
+      }
+      .fo-3-box2 {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 355px;
+        height: 70px;
+        border-radius: 35px;
+        box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%),
+          inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
+        background-color: #1b1b1b;
+        margin-left: 60px;
+        cursor: pointer;
+
+        .footer-img1 {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          background: url("../images/flag_store.png") no-repeat 20px 50%;
+          padding-left: 94px;
+
+          span {
+            position: relative;
+            display: block;
+            width: 130.5px;
+            height: 14px;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(153, 153, 153, 0.67);
+            float: left;
+
+            strong {
+              color: rgba(233, 229, 229, 0.67);
+            }
+          }
+        }
+        .footer-img2 {
+          width: 10px;
+          height: 20px;
+          text-align: center;
+          margin-right: 30px;
+          background: url("../images/select_btn01.png") no-repeat center;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}
