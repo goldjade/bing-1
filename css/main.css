@@ -167,7 +167,7 @@ body {
   width: 100%;
   height: 115px;
   border-bottom: 1px solid #e7e7e7;
-  padding: 40px 20px;
+  padding: 40px 80px;
 }
 .header-wrap .header-main .nav {
   position: relative;
@@ -257,7 +257,7 @@ body {
 }
 .header-wrap .header-main .header-help .header-lang {
   position: relative;
-  padding-top: 10px;
+  padding-top: 5px;
   margin-right: 40px;
 }
 .header-wrap .header-main .header-help .header-lang .header-language-text {
