@@ -6,16 +6,16 @@
       margin-bottom: 40px;
     }
     @at-root .goods-wrap {
+      position: relative;
       display: flex;
       justify-content: space-between;
-      position: relative;
       padding: 0 40px;
 
       @at-root .goods-box {
         display: block;
         width: 260px;
         padding: 0 9px;
-        transition: all 1s ease;
+        transition: all 1s;
         &:hover {
           transform: translateY(-10px);
         }
