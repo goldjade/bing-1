@@ -65,6 +65,7 @@ body {
   width: 7px;
   height: 15px;
   border: none;
+  opacity: 0.1;
 }
 
 .next-btn {
@@ -76,6 +77,8 @@ body {
   width: 8px;
   height: 15px;
   border: none;
+  opacity: 1;
+  cursor: pointer;
 }
 /* 레이아웃 */
 .wrap {
@@ -91,7 +94,6 @@ body {
   line-height: 1.45;
   letter-spacing: -1.9px;
 }
-
 /* 상단 */
 @import "header";
 /* 비주얼 */
