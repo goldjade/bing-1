@@ -9,10 +9,17 @@
   .visual-bg {
     position: relative;
     display: block;
-    width: 1328px;
+    width: 100%;
+    max-width: 1328px;
     height: 422px;
     margin: 0 auto;
-    background: url("../images/sec01_logo_3.png") no-repeat;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 1328px;
+    }
+    // background: url("../images/sec01_logo_3.png") no-repeat center;
+    // background-size: cover;
   }
   .serch-box {
     position: relative;
@@ -87,4 +94,19 @@
       white-space: nowrap;
     }
   }
+}
+@media screen and (max-width: 1400px) {
+  .visual {
+    .visual-bg {
+      height: 51.55vw !important;
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  // .visual {
+  //   .visual-bg {
+  //     height: 214vw !important;
+  //     background: url("../images/m_sec01_logo_3.png") no-repeat center !important;
+  //   }
+  // }
 }

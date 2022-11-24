@@ -326,10 +326,15 @@ body {
 .visual .visual-bg {
   position: relative;
   display: block;
-  width: 1328px;
+  width: 100%;
+  max-width: 1328px;
   height: 422px;
   margin: 0 auto;
-  background: url("../images/sec01_logo_3.png") no-repeat;
+  text-align: center;
+}
+.visual .visual-bg img {
+  width: 100%;
+  max-width: 1328px;
 }
 .visual .serch-box {
   position: relative;
@@ -405,6 +410,11 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 1400px) {
+  .visual .visual-bg {
+    height: 51.55vw !important;
+  }
+}
 /* 상품 */
 .products-inner {
   margin-bottom: 170px;
