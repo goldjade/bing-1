@@ -396,19 +396,19 @@ body {
 }
 
 /* 브랜드샵 */
-.brand .brand-inner {
+.brand-inner {
   margin-bottom: 170px;
 }
-.brand .brand-inner .section-title {
+.brand-inner .section-title {
   margin-bottom: 40px;
 }
-.brand .brand-inner .brand-wrap {
+.brand-wrap {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
 }
-.brand .brand-inner .brand-wrap .brand-box {
+.brand-box {
   position: relative;
   display: block;
   width: 242px;
@@ -635,4 +635,4 @@ h3 {
   background: #ed1c24;
 }
 
-/* 하단 */
+/* 하단 *//*# sourceMappingURL=main.css.map */
