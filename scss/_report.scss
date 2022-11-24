@@ -49,3 +49,37 @@ h3 {
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .report-wrap {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .cyber > p {
+    font-size: 16px !important;
+  }
+  .safe > p {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  a {
+    bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .report-wrap {
+    flex-wrap: wrap !important;
+    padding-bottom: 80px !important;
+    .cyber {
+      width: 100% !important;
+      margin-bottom: 10px !important;
+    }
+    .safe {
+      width: 100% !important;
+    }
+  }
+}

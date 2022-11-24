@@ -921,6 +921,7 @@ h3 {
   margin-bottom: 40px;
 }
 
+
 .report-wrap {
   display: flex;
   justify-content: space-between;
@@ -985,6 +986,37 @@ h3 {
   background: #ed1c24;
 }
 
+@media screen and (max-width: 1400px) {
+  .report-wrap {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .cyber > p {
+    font-size: 16px !important;
+  }
+  .safe > p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 1020px) {
+  a {
+    bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .report-wrap {
+    flex-wrap: wrap !important;
+    padding-bottom: 80px !important;
+  }
+  .report-wrap .cyber {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .report-wrap .safe {
+    width: 100% !important;
+  }
+}
 /* 하단 */
 .footer {
   position: relative;
@@ -1144,4 +1176,5 @@ h3 {
   margin-right: 30px;
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
+
 }/*# sourceMappingURL=main.css.map */
