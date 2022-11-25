@@ -8,16 +8,16 @@
     @at-root .goods-wrap {
       position: relative;
       width: 100%;
-      max-width: 1650px;
       display: flex;
       justify-content: space-between;
       padding: 0 40px;
 
       @at-root .goods-box {
         display: block;
-        width: 260px;
+        width: calc(100% / 6);
+        max-width: 260px;
         text-align: center;
-        transition: all 1s;
+        transition: transform 1s;
         &:hover {
           transform: translateY(-10px);
         }
@@ -70,5 +70,48 @@
 @media screen and (max-width: 1700px) {
   .goods-wrap {
     width: 95%;
+    margin: 0 auto;
+  }
+  .goods-img,
+  .goods-type {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .goods-img,
+  .goods-type {
+    width: 93%;
+    max-width: 232px;
+  }
+  .goods-box {
+    width: calc(100% / 5);
+  }
+  .goods-box:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .goods-img,
+  .goods-type {
+    width: 91%;
+    max-width: 160px;
+  }
+  .goods-box {
+    width: calc(100% / 6);
+  }
+  .goods-box:last-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+  .goods-wrap {
+    padding: 0;
   }
 }
