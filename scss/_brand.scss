@@ -22,6 +22,7 @@
       position: relative;
       width: calc(100% / 6);
       max-width: 260px;
+      height: 250px;
       &:hover > .brand-box {
         opacity: 0;
         transform: translateY(-10px);
@@ -51,7 +52,7 @@
         display: block;
         width: 100%;
         max-width: 242px;
-        height: 250px;
+        height: 100%;
         border: 1px solid #edecef;
         border-radius: 30px;
         margin: 0 8px;
@@ -62,6 +63,14 @@
           position: absolute;
           left: 50%;
           top: 50%;
+          display: block;
+          transform: translate(-50%, -50%);
+        }
+        @at-root .brand-logo-mo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          display: none;
           transform: translate(-50%, -50%);
         }
       }
@@ -72,7 +81,7 @@
         display: flex;
         width: 100%;
         max-width: 242px;
-        height: 250px;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -94,7 +103,7 @@
           position: relative;
           width: 100%;
           max-width: 242px;
-          height: 125px;
+          height: calc(100% / 2);
           font-size: 16px;
           letter-spacing: -1.44px;
           line-height: 1.38;
@@ -141,13 +150,13 @@
     width: 95%;
   }
 }
-
 @media screen and (max-width: 1400px) {
-  .brand-logo {
-    width: 100%;
-    max-width: 110px;
+  .brand-logo,
+  .hover-img {
+    width: 90px;
   }
-
+}
+@media screen and (max-width: 1399px) {
   .box-wrap li {
     width: calc(100% / 5);
   }
@@ -160,10 +169,33 @@
   .box-wrap li {
     width: calc(100% / 4);
   }
-  .box-wrap li:nth-child(5) {
+  .box-wrap li:nth-of-type(5) {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .box-wrap li:last-child,
+  .box-wrap li:nth-of-type(5) {
+    display: block;
+  }
+
+  .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px;
+  }
+
+  .box-wrap li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .brand-logo {
+    display: none;
+  }
+  .brand-logo-mo {
+    display: block;
+  }
 }
