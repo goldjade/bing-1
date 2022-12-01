@@ -9,31 +9,35 @@
   .visual-bg {
     position: relative;
     display: block;
-    width: 100%;
-    max-width: 1328px;
-    height: 422px;
-    margin: 0 auto;
     text-align: center;
-    img {
+
+    .pc-visual {
+      position: relative;
       width: 100%;
-      max-width: 1328px;
+      max-width: 1320px;
+      height: auto;
     }
-    // background: url("../images/sec01_logo_3.png") no-repeat center;
-    // background-size: cover;
+    .mb-visual {
+      display: none;
+    }
   }
+  // background: url("../images/sec01_logo_3.png") no-repeat center;
+  // background-size: cover;
+
   .serch-box {
     position: relative;
-    display: flex;
-    width: 1020px;
+    width: 80%;
     height: 80px;
     border-radius: 40px;
     box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
     background-color: #fff;
     margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .search-form {
       width: 100%;
       padding: 0 15px 0 55px;
-      justify-content: space-between;
       height: 100%;
       .search-txt {
         width: 78%;
@@ -50,7 +54,7 @@
       }
     }
     .visual-search {
-      max-width: 180px;
+      // max-width: 180px;
       cursor: pointer;
       width: 22%;
       height: 55px;
@@ -64,6 +68,7 @@
       background-image: linear-gradient(to top, #ed1c24, #e0462e);
       outline-style: none;
       border: 0;
+      margin-right: 20px;
     }
   }
 }
@@ -95,18 +100,63 @@
     }
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1650px) {
   .visual {
-    .visual-bg {
-      height: 51.55vw !important;
+    height: 58.42vw;
+  }
+}
+@media screen and (max-width: 1273px) {
+  .serch-box {
+    height: 5.88vw !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .visual-bg {
+    .pc-visual {
+      display: none !important;
+    }
+    .mb-visual {
+      display: block !important;
+      width: 581px !important;
+      height: 183px !important;
+      line-height: 25px !important;
+      margin: 0 auto !important;
+      background: url("../images/m_sec01_logo_3.png") no-repeat !important;
+      background-size: cover !important;
+      text-align: center !important;
+    }
+  }
+  .serch-box {
+    width: 80% !important;
+    .search-form {
+      width: 80%;
+      padding: 0 15px 0 55px;
+      height: 80%;
+      .search-txt {
+        width: 60%;
+        height: 80%;
+        padding-left: 30px;
+      }
+    }
+    .visual-search {
+      // max-width: 180px;
+      cursor: pointer;
+      width: 20% !important;
+      height: 39px !important;
     }
   }
 }
-@media screen and (max-width: 1020px) {
-  // .visual {
-  //   .visual-bg {
-  //     height: 214vw !important;
-  //     background: url("../images/m_sec01_logo_3.png") no-repeat center !important;
-  //   }
-  // }
+// .search-form {
+//   width: 810px !important;
+//   height: 60px !important;
+//   padding: 0 15px 0 55px !important;
+// }
+.header {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 760px) {
 }

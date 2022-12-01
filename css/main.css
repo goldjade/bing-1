@@ -326,30 +326,32 @@ body {
 .visual .visual-bg {
   position: relative;
   display: block;
-  width: 100%;
-  max-width: 1328px;
-  height: 422px;
-  margin: 0 auto;
   text-align: center;
 }
-.visual .visual-bg img {
+.visual .visual-bg .pc-visual {
+  position: relative;
   width: 100%;
-  max-width: 1328px;
+  max-width: 1320px;
+  height: auto;
+}
+.visual .visual-bg .mb-visual {
+  display: none;
 }
 .visual .serch-box {
   position: relative;
-  display: flex;
-  width: 1020px;
+  width: 80%;
   height: 80px;
   border-radius: 40px;
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
   background-color: #fff;
   margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .visual .serch-box .search-form {
   width: 100%;
   padding: 0 15px 0 55px;
-  justify-content: space-between;
   height: 100%;
 }
 .visual .serch-box .search-form .search-txt {
@@ -366,7 +368,6 @@ body {
   border: 0;
 }
 .visual .serch-box .visual-search {
-  max-width: 180px;
   cursor: pointer;
   width: 22%;
   height: 55px;
@@ -380,6 +381,7 @@ body {
   background-image: linear-gradient(to top, #ed1c24, #e0462e);
   outline-style: none;
   border: 0;
+  margin-right: 20px;
 }
 
 .keyword-box {
@@ -410,11 +412,53 @@ body {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 1400px) {
-  .visual .visual-bg {
-    height: 51.55vw !important;
+@media screen and (max-width: 1650px) {
+  .visual {
+    height: 58.42vw;
   }
 }
+@media screen and (max-width: 1273px) {
+  .serch-box {
+    height: 5.88vw !important;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .visual-bg .pc-visual {
+    display: none !important;
+  }
+  .visual-bg .mb-visual {
+    display: block !important;
+    width: 581px !important;
+    height: 183px !important;
+    line-height: 25px !important;
+    margin: 0 auto !important;
+    background: url("../images/m_sec01_logo_3.png") no-repeat !important;
+    background-size: cover !important;
+    text-align: center !important;
+  }
+  .serch-box {
+    width: 80% !important;
+  }
+  .serch-box .search-form {
+    width: 80%;
+    padding: 0 15px 0 55px;
+    height: 80%;
+  }
+  .serch-box .search-form .search-txt {
+    width: 60%;
+    height: 80%;
+    padding-left: 30px;
+  }
+  .serch-box .visual-search {
+    cursor: pointer;
+    width: 20% !important;
+    height: 39px !important;
+  }
+}
+.header {
+  display: none !important;
+}
+
 /* 상품 */
 .products-inner {
   margin-bottom: 170px;
