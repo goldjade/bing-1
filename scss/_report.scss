@@ -1,15 +1,3 @@
-@mixin red-bt {
-  display: block;
-  width: 160px;
-  height: 43px;
-  color: #fff;
-  font-size: 14px;
-  line-height: 43px;
-  text-align: center;
-  border-radius: 20px;
-  background: #ed1c24;
-}
-
 h3 {
   text-align: center;
   margin-bottom: 40px;
@@ -58,6 +46,40 @@ h3 {
       transform: translateX(-50%);
       bottom: 50px;
       @include red-bt();
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .report-wrap {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .cyber > p {
+    font-size: 16px !important;
+  }
+  .safe > p {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  a {
+    bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .report-wrap {
+    flex-wrap: wrap !important;
+    padding-bottom: 80px !important;
+    .cyber {
+      width: 100% !important;
+      margin-bottom: 10px !important;
+    }
+    .safe {
+      width: 100% !important;
     }
   }
 }

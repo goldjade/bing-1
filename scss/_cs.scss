@@ -1,15 +1,3 @@
-@mixin red-bt {
-  display: block;
-  width: 160px;
-  height: 43px;
-  color: #fff;
-  font-size: 14px;
-  line-height: 43px;
-  text-align: center;
-  border-radius: 20px;
-  background: #ed1c24;
-}
-
 .cs {
   position: relative;
   display: block;
@@ -42,13 +30,16 @@
         > h4 {
           font-family: "Binggrae-Bold", sans-serif;
           font-size: 32px;
-          text-align: center;
+          text-align: left;
           margin-bottom: 40px;
           padding-bottom: 32px;
         }
         > p {
           font-size: 16px;
           line-height: 1.63;
+          .br {
+            display: none;
+          }
         }
         > a {
           @include red-bt();
@@ -117,7 +108,7 @@
           }
         }
       }
-      .qna-list {
+      @at-root .qna-list {
         position: relative;
         > li {
           position: relative;
@@ -143,6 +134,7 @@
             margin: 0;
           }
           > a {
+            font-size: 18px;
             line-height: 80px;
             &::after {
               content: "";
@@ -167,6 +159,166 @@
           }
           &:hover a::after {
             transform: translateY(-50%) scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .qna-box {
+    width: 95% !important;
+  }
+  .qna-list > li {
+    height: 65px !important;
+  }
+  .qna-list > li > a {
+    font-size: 16px;
+    line-height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .qna-list > li {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .emali {
+    height: 260px !important;
+    padding: 30px !important;
+    margin-top: 30px !important;
+    > h4 {
+      font-size: 28px !important;
+      padding-bottom: 20px !important;
+      margin-bottom: 0 !important;
+    }
+    > p {
+      font-size: 14px !important;
+      line-height: 1.63 !important;
+      .br {
+        display: block !important;
+      }
+    }
+    > a {
+      position: absolute !important;
+      bottom: 30px !important;
+      background: #ed1c24 !important;
+    }
+  }
+  .phon {
+    height: 260px !important;
+    padding: 30px !important;
+    margin-top: 30px !important;
+    > h4 {
+      font-size: 28px !important;
+      padding-bottom: 20px !important;
+      margin-bottom: 0 !important;
+    }
+    .p-n {
+      font-size: 38.5px !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 22px !important;
+  }
+  .qna-box-wrap {
+    .qna-box {
+      margin: 0 auto;
+      padding: 31px 14px !important;
+      box-shadow: none !important;
+      border: solid 1px rgba(224, 223, 226, 0.6) !important;
+      background-color: #fff !important ;
+      .emali {
+        width: 100% !important;
+        height: 125px !important;
+        margin-top: 0px !important;
+        border-radius: 15px !important;
+        background: #eef8fa url("../images/sec04_backimg01.png") right no-repeat !important;
+        background-position: center !important;
+        > h4 {
+          font-size: 18px !important;
+          padding: 0 !important;
+          margin-bottom: 10px !important;
+        }
+        > p {
+          > span {
+            display: none !important;
+          }
+        }
+        .r-b {
+          display: none !important;
+        }
+      }
+      .phon {
+        width: 100% !important;
+        height: 125px !important;
+        border-radius: 15px !important;
+        background: #fdf3f2 url("../images/sec04_backimg02.png") right no-repeat !important;
+        background-position: center !important;
+        > h4 {
+          font-size: 18px !important;
+          padding: 0 !important;
+          margin-bottom: 10px !important;
+        }
+        .p-n {
+          font-size: 18px !important;
+          padding: 0px !important;
+          margin-bottom: 10px !important;
+        }
+        .month {
+          font-size: 16px !important;
+        }
+        .time {
+          padding-top: 10px !important;
+        }
+      }
+      .qna-bottom {
+        .flex-box {
+          align-items: center;
+          > span {
+            font-size: 18px !important;
+            line-height: 25px !important;
+            margin-right: 10px !important;
+          }
+          .qna-more-bt {
+            width: 115px !important;
+            height: 30px !important;
+            border-radius: 15px !important;
+          }
+        }
+        .qna-list {
+          position: relative;
+        }
+        .qna-list > li {
+          height: 47px !important;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            background : {
+              image: url(../images/m_link_arrow01.png);
+              repeat: no-repeat;
+              size: contain;
+            }
+          }
+        }
+        .qna-list > li > a {
+          font-size: 14px !important;
+          line-height: 47px !important;
+          &::after {
+            width: 0px !important;
+            height: 0px !important;
           }
         }
       }

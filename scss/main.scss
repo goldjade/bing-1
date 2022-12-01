@@ -47,7 +47,8 @@ body {
 }
 .inner01 {
   position: relative;
-  width: 1650px;
+  width: 100%;
+  max-width: 1650px;
   margin: 0 auto;
 }
 
@@ -66,6 +67,7 @@ body {
   height: 15px;
   border: none;
   opacity: 0.1;
+  cursor: pointer;
 }
 
 .next-btn {

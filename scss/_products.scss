@@ -6,22 +6,24 @@
       margin-bottom: 40px;
     }
     @at-root .goods-wrap {
+      position: relative;
+      width: 100%;
       display: flex;
       justify-content: space-between;
-      position: relative;
       padding: 0 40px;
 
       @at-root .goods-box {
         display: block;
-        width: 260px;
-        padding: 0 9px;
-        transition: all 1s ease;
+        width: calc(100% / 6);
+        // max-width: 260px;
+        text-align: center;
+        transition: transform 1s;
         &:hover {
           transform: translateY(-10px);
         }
 
         &:hover > .goods-type-hover {
-          display: block;
+          display: inline-block;
         }
 
         &:hover > .goods-type {
@@ -29,12 +31,14 @@
         }
         @at-root .goods-img {
           width: 100%;
-          padding-bottom: 12px;
+          max-width: 242px;
+          margin-bottom: 12px;
           cursor: auto;
         }
         @at-root .goods-type {
-          display: block;
+          display: inline-block;
           width: 100%;
+          max-width: 242px;
           height: 43px;
           font-size: 16px;
           letter-spacing: -0.09em;
@@ -47,6 +51,7 @@
         @at-root .goods-type-hover {
           display: none;
           width: 100%;
+          max-width: 242px;
           height: 43px;
           font-size: 16px;
           letter-spacing: -0.09em;
@@ -59,5 +64,95 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .goods-wrap {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .goods-img,
+  .goods-type {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .goods-img,
+  .goods-type {
+    width: 93%;
+    max-width: 232px;
+  }
+  .goods-box {
+    width: calc(100% / 5);
+  }
+  .goods-box:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .goods-img,
+  .goods-type {
+    width: 91%;
+    max-width: 160px;
+  }
+  .goods-box {
+    width: calc(100% / 6);
+  }
+  .goods-box:last-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+  .products-inner {
+    margin-bottom: 0px;
+  }
+  .goods-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    grid-template-areas:
+      "icecream milk juice"
+      "banana coffee apple";
+  }
+
+  .goods-box {
+    width: 100%;
+  }
+
+  .goods-type {
+    background: transparent;
+  }
+
+  .goods-box:nth-of-type(1) {
+    grid-area: icecream;
+  }
+  .goods-box:nth-of-type(2) {
+    grid-area: banana;
+  }
+  .goods-box:nth-of-type(3) {
+    grid-area: milk;
+  }
+  .goods-box:nth-of-type(4) {
+    grid-area: coffee;
+  }
+  .goods-box:nth-of-type(5) {
+    grid-area: juice;
+  }
+  .goods-box:nth-of-type(6) {
+    grid-area: apple;
+  }
+  .goods-img,
+  .goods-type {
+    width: 97%;
+    max-width: 235px;
   }
 }

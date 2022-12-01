@@ -2,31 +2,200 @@
   @at-root .brand-inner {
     margin-bottom: 170px;
     .section-title {
+      text-align: center;
       margin-bottom: 40px;
     }
-    @at-root .brand-wrap {
+  }
+  @at-root .box-wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+    .prev-btn {
+      top: 55%;
+    }
+    .next-btn {
+      top: 55%;
+    }
+    li {
       position: relative;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 40px;
+      width: calc(100% / 6);
+      max-width: 260px;
+      height: 250px;
+      &:hover > .brand-box {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      &:hover > .hover-box {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      &:hover > .hover-box > .hover-img {
+        transform: scale(0.8) translateY(0);
+        opacity: 1;
+        transition: all 0.7s;
+      }
+      &:hover > .hover-box > .hover-txt {
+        transform: translateY(0px);
+        opacity: 1;
+        display: block;
+        transition: all 0.7s;
+      }
+      &:hover > .hover-box > .hover-btn {
+        display: block;
+      }
+
       @at-root .brand-box {
         position: relative;
         display: block;
-        width: 242px;
-        height: 250px;
+        width: 100%;
+        max-width: 242px;
+        height: 100%;
         border: 1px solid #edecef;
         border-radius: 30px;
         margin: 0 8px;
+        opacity: 1;
         cursor: auto;
+        transition: transform 1s ease;
         @at-root .brand-logo {
           position: absolute;
           left: 50%;
           top: 50%;
+          display: block;
           transform: translate(-50%, -50%);
+        }
+        @at-root .brand-logo-mo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          display: none;
+          transform: translate(-50%, -50%);
+        }
+      }
+      @at-root .hover-box {
+        position: absolute;
+        top: 0;
+        // transform: translateY(-250px);
+        display: flex;
+        width: 100%;
+        max-width: 242px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        border-radius: 30px;
+        margin: 0 8px;
+        box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+        opacity: 0;
+        cursor: auto;
+        transition: all 1s;
+        overflow-y: hidden;
+
+        @at-root .hover-img {
+          transform: scale(0.8) translateY(60px);
+          opacity: 0;
+        }
+        @at-root .hover-txt {
+          position: relative;
+          width: 100%;
+          max-width: 242px;
+          height: calc(100% / 2);
+          font-size: 16px;
+          letter-spacing: -1.44px;
+          line-height: 1.38;
+          text-align: center;
+          transform: translateY(50px);
+          opacity: 0;
+          cursor: default;
+
+          &::before {
+            content: "";
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 1px;
+            margin: 18px auto;
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+        @at-root .hover-btn {
+          position: absolute;
+          bottom: 10px;
+          display: none;
+          width: 90%;
+          height: 43px;
+          border: none;
+          border-radius: 21px;
+          color: #fff;
+          cursor: pointer;
+          box-shadow: inset 0px 5px 10px 0 rgb(53 53 53 / 11%);
+          background-image: linear-gradient(to top, #ed1c24, #e0462e);
         }
       }
     }
   }
 }
 
-// 170 150
+@media screen and (max-width: 1700px) {
+  .box-wrap {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .brand-box,
+  .hover-box {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .brand-logo,
+  .hover-img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .box-wrap li {
+    width: calc(100% / 5);
+  }
+  .box-wrap li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .box-wrap li {
+    width: calc(100% / 4);
+  }
+  .box-wrap li:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-wrap li:last-child,
+  .box-wrap li:nth-of-type(5) {
+    display: block;
+  }
+
+  .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px;
+  }
+
+  .box-wrap li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .brand-logo {
+    display: none;
+  }
+  .brand-logo-mo {
+    display: block;
+  }
+}

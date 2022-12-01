@@ -1,0 +1,11 @@
+@mixin red-bt {
+  display: block;
+  width: 160px;
+  height: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ed1c24;
+}
