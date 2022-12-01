@@ -2,6 +2,7 @@
   position: relative;
   display: block;
   width: 100%;
+  max-width: screen and (max-width: 1024px);
   height: 387px;
   background: rgba(0, 0, 0, 0.99);
   margin: 0 auto;
@@ -138,6 +139,7 @@
           align-items: center;
           background: url("../images/flag_store.png") no-repeat 20px 50%;
           padding-left: 94px;
+          line-height: 70px;
 
           span {
             position: relative;
@@ -163,6 +165,19 @@
           background: url("../images/select_btn01.png") no-repeat center;
           transform: rotate(-90deg);
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 930px) {
+  .footer {
+    height: 456px !important;
+    .footer-3 {
+      width: 100%;
+      margin: 0 auto;
+      .copyright {
       }
     }
   }
