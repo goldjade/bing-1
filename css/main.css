@@ -1069,6 +1069,7 @@ h3 {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .report-wrap {
   display: flex;
   justify-content: space-between;
@@ -1084,6 +1085,7 @@ h3 {
   padding: 78px 25px 58px 25px;
   border-radius: 30px;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  cursor: pointer;
 }
 .report-wrap .cyber > p {
   font-size: 20px;
@@ -1112,6 +1114,7 @@ h3 {
   padding: 78px 25px 58px 25px;
   border-radius: 30px;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  cursor: pointer;
 }
 .report-wrap .safe > p {
   font-size: 20px;
@@ -1147,7 +1150,10 @@ h3 {
   }
 }
 @media screen and (max-width: 1020px) {
-  a {
+  .cyber > a {
+    bottom: 30px !important;
+  }
+  .safe > a {
     bottom: 30px !important;
   }
 }
@@ -1323,3 +1329,4 @@ h3 {
   margin-right: 30px;
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
+}
