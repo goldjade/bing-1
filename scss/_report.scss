@@ -16,6 +16,7 @@ h3 {
     padding: 78px 25px 58px 25px;
     border-radius: 30px;
     box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+    cursor: pointer;
     > p {
       font-size: 20px;
       text-align: center;
@@ -36,6 +37,7 @@ h3 {
     padding: 78px 25px 58px 25px;
     border-radius: 30px;
     box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+    cursor: pointer;
     > p {
       font-size: 20px;
       text-align: center;
@@ -66,7 +68,10 @@ h3 {
 }
 
 @media screen and (max-width: 1020px) {
-  a {
+  .cyber > a {
+    bottom: 30px !important;
+  }
+  .safe > a {
     bottom: 30px !important;
   }
 }
