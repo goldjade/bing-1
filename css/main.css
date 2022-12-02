@@ -1461,6 +1461,7 @@ h3 {
   align-items: center;
   background: url("../images/flag_store.png") no-repeat 20px 50%;
   padding-left: 94px;
+  line-height: 70px;
 }
 .footer .footer-3 .f-3-right .fo-3-box2 .footer-img1 span {
   position: relative;
@@ -1484,3 +1485,13 @@ h3 {
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
 }
+
+@media screen and (max-width: 930px) {
+  .footer {
+    height: 456px !important;
+  }
+  .footer .footer-3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */
