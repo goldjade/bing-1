@@ -110,6 +110,87 @@ body {
   letter-spacing: -1.9px;
 }
 
+/* fix */
+.fix-menu {
+  position: fixed;
+  bottom: 58px;
+  right: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+.fix-menu .fix-char {
+  position: relative;
+}
+.fix-menu .fix-char > img {
+  -webkit-animation: move 2s infinite ease-in-out;
+          animation: move 2s infinite ease-in-out;
+}
+.fix-menu .fix-char > p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 82px;
+  display: none;
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 700;
+  border-radius: 22.5px;
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+.fix-menu .fix-btn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  background: #000;
+}
+.fix-menu .fix-btn.not-active {
+  background: #000 url("../images/fix_arrow.png") no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+.fix-menu .fix-btn.active {
+  background: #000 url("../images/fix_arrow.png") no-repeat;
+  background-position: center;
+}
+.fix-menu .fix-btn.shop {
+  margin: 10px auto 5px 10px;
+  background: #fff;
+  letter-spacing: normal;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  font-weight: 500;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 /* 상단 */
 .header {
   position: fixed;
@@ -124,7 +205,8 @@ body {
   display: block;
   width: 100%;
 }
-.header-wrap .header-bg {
+.header-wrap::after {
+  content: "";
   position: absolute;
   display: block;
   left: 0;
@@ -133,10 +215,6 @@ body {
   height: 580px;
   border-radius: 0 0 50px 50px;
   background: #fff;
-}
-.header-wrap:hover .header-bg {
-  top: 0;
-  transition: all 0.8s;
 }
 .header-wrap:hover .depth2 {
   visibility: visible !important;
