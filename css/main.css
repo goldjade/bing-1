@@ -123,6 +123,10 @@ body {
 }
 .fix-menu .fix-char {
   position: relative;
+  cursor: pointer;
+}
+.fix-menu .fix-char:hover > p {
+  display: block;
 }
 .fix-menu .fix-char > img {
   -webkit-animation: move 2s infinite ease-in-out;
@@ -150,6 +154,7 @@ body {
   border-radius: 50%;
   text-align: center;
   background: #000;
+  cursor: pointer;
 }
 .fix-menu .fix-btn.not-active {
   background: #000 url("../images/fix_arrow.png") no-repeat;

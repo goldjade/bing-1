@@ -9,6 +9,10 @@
   z-index: 100000;
   .fix-char {
     position: relative;
+    cursor: pointer;
+    &:hover > p {
+      display: block;
+    }
     > img {
       animation: move 2s infinite ease-in-out;
     }
@@ -35,6 +39,7 @@
     border-radius: 50%;
     text-align: center;
     background: #000;
+    cursor: pointer;
   }
 
   .fix-btn.not-active {
